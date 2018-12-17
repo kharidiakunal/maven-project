@@ -1,10 +1,14 @@
-pipeline {
+pipeline 
+{
 	agent any
-	stages{
-		stage('Build')
+		stages
 		{
-			steps{
-				bat 'mvn clean package:'
-					}
+			stage('Build')
+			{
+				steps
+				{
+					bat 'mvn clean package:'
+				}
+			}
 		}
-	}
+}
